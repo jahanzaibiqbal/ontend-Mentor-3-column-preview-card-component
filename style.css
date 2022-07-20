@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+
+/* ### Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper{
+    /* height: 100vh; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    margin: 0 auto; 
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    text-align: left;
+    width: 60rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.box-1,.box-2,.box-3{
+    
+    padding:3rem;
+
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.container a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--Very-light-gray-background-headings-buttons);
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-top:5rem;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+.container a:hover{
+    /* background-color:none; */
+    background-color: inherit;
+    color: white;
+
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--Transparent-white-paragraphs);
+}
+.box-1{
+    background-color: var(--Bright-orange);
+}
+.box-1 a{
+    background-color: #fff;
+    color: var(--Bright-orange);
+}
+.box-2 a{
+    background-color: #fff;
+    color: var(--Dark-cyan);
+}
+
+.box-3 a{
+    background-color: #fff;
+    color: var(--Very-dark-cyan);
+}
+
+.box-2{
+    background-color: var(--Dark-cyan);
+    /* margin: ; */
+    }
+.box-3{
+    background-color: var(--Very-dark-cyan);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    
+
+    .wrapper{
+        height: 100vh;
+}   
+    .container{
+        display: flex;
+        flex-flow:column;
+        /* text-align: left; */
+        width: 20rem;
+    
+    }
+
+    
+}
